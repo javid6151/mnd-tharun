@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, MessageSquare, Sparkles, ShieldCheck, Check, ArrowRight, Share2, Compass, Layers } from 'lucide-react';
+import { X, MessageSquare, ShieldCheck, Check, ArrowRight, Share2, Compass, Layers } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 
 export default function ProductDetailModal({ 
@@ -114,9 +114,12 @@ export default function ProductDetailModal({
               
               <div className="space-y-4">
                 {product.badge && (
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#F3EFE8] text-[#8A6738] text-[10px] uppercase font-bold tracking-widest border border-[#EAE5DC]">
-                    {product.badge}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="w-5 h-px bg-[#8A6738]" />
+                    <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#8A6738] font-sans">
+                      {product.badge}
+                    </span>
+                  </div>
                 )}
 
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-[#1A1715] font-normal leading-tight">

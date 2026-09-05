@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, MessageSquare, Star, ArrowUp, Sparkles, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, MessageSquare, Star, ArrowUp, ShieldCheck } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 import { googleProfileSummary } from '../data/reviewsData';
 

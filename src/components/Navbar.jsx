@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Phone, MessageSquare, Menu, X, Sparkles, Sliders, ChevronRight, Home, Grid, MapPin, Compass } from 'lucide-react';
+import { Search, Phone, MessageSquare, Menu, X, Sliders, ChevronRight, Home, Grid, MapPin, Compass, BookOpen, Star } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 
 export default function Navbar({ 
@@ -26,9 +26,9 @@ export default function Navbar({
     { label: 'Home', route: 'home', icon: Home },
     { label: 'Collections', route: 'collections', icon: Compass },
     { label: 'Furniture', route: 'furniture', icon: Grid },
-    { label: 'About', route: 'about', icon: Sparkles },
+    { label: 'About', route: 'about', icon: BookOpen },
     { label: 'Gallery', route: 'gallery', icon: Grid },
-    { label: 'Reviews', route: 'reviews', icon: Sparkles },
+    { label: 'Reviews', route: 'reviews', icon: Star },
     { label: 'Contact', route: 'contact', icon: MapPin },
   ];
 
@@ -142,9 +142,8 @@ export default function Navbar({
             {/* Enquire Now (Tablet & Desktop) */}
             <button
               onClick={onOpenEnquiry}
-              className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#1A1715] text-[#FAF8F5] hover:bg-[#332D28] text-xs font-medium tracking-wider uppercase transition-all duration-200 group shadow-xs"
+              className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#1A1715] text-[#FAF8F5] hover:bg-[#332D28] text-xs font-medium tracking-wider uppercase transition-all duration-200 shadow-xs"
             >
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37] group-hover:text-white transition-colors" />
               <span>Enquire</span>
             </button>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 
 export default function CollectionsPage({ categories, onSelectCategory }) {
   return (
@@ -7,9 +7,12 @@ export default function CollectionsPage({ categories, onSelectCategory }) {
       
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3EFE8] border border-[#EAE5DC] text-[#8A6738] text-xs font-semibold tracking-widest uppercase font-sans">
-          <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-          <span>CURATED CATEGORIES</span>
+        <div className="flex items-center justify-center gap-3">
+          <span className="w-8 h-px bg-[#8A6738]/60" />
+          <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+            Curated Categories
+          </span>
+          <span className="w-8 h-px bg-[#8A6738]/60" />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[#1A1715] leading-tight">
           Our Collections
@@ -35,7 +38,7 @@ export default function CollectionsPage({ categories, onSelectCategory }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
               <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 rounded-full bg-white/90 border border-[#EAE5DC] backdrop-blur-md text-[#1A1715] text-[10px] font-bold uppercase tracking-wider font-sans">
+                <span className="px-2.5 py-1 bg-white/95 border border-[#EAE5DC] backdrop-blur-md text-[#1A1715] text-[10px] font-semibold uppercase tracking-wider font-sans shadow-xs">
                   {cat.count} {typeof cat.count === 'number' ? 'Pieces' : ''}
                 </span>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Star, ChevronLeft, ChevronRight, Quote, ShieldCheck, ExternalLink, Sparkles, Play, Eye, Heart, MessageCircle, Pause, PlayCircle } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, Quote, ShieldCheck, ExternalLink, Play, Eye, Heart, MessageCircle, Pause, PlayCircle } from 'lucide-react';
 import { verifiedReviews, googleProfileSummary } from '../data/reviewsData';
 import ScrollReveal from './ScrollReveal';
 
@@ -171,9 +171,11 @@ export default function ReviewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
           
           <ScrollReveal className="lg:col-span-7 space-y-4 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3EFE8] text-[#8A6738] border border-[#EAE5DC] text-xs font-semibold tracking-widest uppercase font-sans">
-              <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-              <span>VERIFIED PATRON EXPERIENCES</span>
+            <div className="flex items-center justify-center lg:justify-start gap-3">
+              <span className="w-8 h-px bg-[#8A6738]" />
+              <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+                Verified Patron Experiences
+              </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#1A1715]">
               What Our Patrons Say
@@ -357,12 +359,12 @@ export default function ReviewsSection() {
 
                   {/* Top Header Tags */}
                   <div className="absolute top-4 inset-x-4 flex items-center justify-between z-10">
-                    <span className="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-[10px] font-bold tracking-wider font-sans flex items-center gap-1.5">
+                    <span className="px-2.5 py-1 bg-black/60 backdrop-blur-md border border-white/20 text-white text-[10px] font-semibold tracking-wider font-sans flex items-center gap-1.5 shadow-xs">
                       <InstagramIcon className="w-3 h-3 text-[#D4AF37]" />
                       <span>{reel.category}</span>
                     </span>
 
-                    <span className="px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-stone-200 text-[10px] font-semibold font-sans">
+                    <span className="px-2 py-0.5 bg-black/60 backdrop-blur-md border border-white/20 text-stone-200 text-[10px] font-semibold font-sans shadow-xs">
                       {reel.duration}
                     </span>
                   </div>

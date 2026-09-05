@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Compass } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function AntiqueVintageHero({ onExploreVintage }) {
   return (

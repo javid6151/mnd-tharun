@@ -163,7 +163,7 @@ export default function CollectionsGrid({ categories = [], onSelectCategory }) {
           </span>
         </div>
 
-        <div className="hidden sm:flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#141210]/80 backdrop-blur-md border border-white/15 text-[#FAF8F5] text-xs tracking-wider uppercase shadow-md">
+        <div className="hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 bg-[#141210]/80 backdrop-blur-md border border-white/15 text-[#FAF8F5] text-[11px] tracking-[0.2em] uppercase shadow-md font-sans">
           <Layers className="w-3.5 h-3.5 text-[#C49A6C]" />
           <span>{slides.length} Signature Collections</span>
         </div>
@@ -179,7 +179,7 @@ export default function CollectionsGrid({ categories = [], onSelectCategory }) {
         >
           {/* Eyebrow Tagline & Count Badge */}
           <div className="flex flex-wrap items-center gap-3">
-            <span className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-[#FAF8F5] border border-white/15 text-[10px] sm:text-xs font-semibold uppercase tracking-wider shadow">
+            <span className="px-2.5 py-1 bg-white/10 backdrop-blur-md text-[#FAF8F5] border border-white/15 text-[10px] sm:text-xs font-semibold uppercase tracking-wider font-sans">
               {slides[activeSlide]?.count} {typeof slides[activeSlide]?.count === 'number' ? 'Pieces' : 'Custom'}
             </span>
             <span className="text-xs sm:text-sm uppercase tracking-[0.18em] text-[#D5CEBF] font-medium drop-shadow-md">

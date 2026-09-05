@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Send, MessageSquare, Phone, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Send, MessageSquare, Phone, CheckCircle2, AlertCircle } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 
 export default function EnquirySection({ preselectedPiece = "", storeConfig }) {
@@ -71,9 +71,11 @@ export default function EnquirySection({ preselectedPiece = "", storeConfig }) {
           
           {/* Left Editorial Prompt */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#EAE5DC] text-[#68625A] text-xs font-semibold tracking-widest uppercase shadow-xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-              <span>BESPOKE CONSULTATION</span>
+            <div className="flex items-center gap-3">
+              <span className="w-8 h-px bg-[#8A6738]" />
+              <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+                Bespoke Consultation
+              </span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#1A1715] leading-tight">

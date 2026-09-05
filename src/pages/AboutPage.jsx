@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Trees, Compass, ShieldCheck, Heart, MapPin, ArrowRight } from 'lucide-react';
+import { Trees, Compass, Heart } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 
 export default function AboutPage({ onExploreFurniture, onContactClick }) {
@@ -8,9 +8,12 @@ export default function AboutPage({ onExploreFurniture, onContactClick }) {
       
       {/* Hero Narrative */}
       <div className="text-center max-w-3xl mx-auto space-y-6">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3EFE8] border border-[#EAE5DC] text-[#8A6738] text-xs font-semibold tracking-widest uppercase font-sans">
-          <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-          <span>OUR LIVING HERITAGE</span>
+        <div className="flex items-center justify-center gap-3">
+          <span className="w-8 h-px bg-[#8A6738]/60" />
+          <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+            Our Living Heritage
+          </span>
+          <span className="w-8 h-px bg-[#8A6738]/60" />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[#1A1715] leading-tight">
           The Soul of <br />

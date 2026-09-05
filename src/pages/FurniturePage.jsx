@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Sparkles, Filter, X, Eye, MessageSquare, ArrowRight } from 'lucide-react';
+import { Search, Filter, X, Eye, MessageSquare, ArrowRight } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 
 export default function FurniturePage({
@@ -47,9 +47,12 @@ export default function FurniturePage({
       
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3EFE8] border border-[#EAE5DC] text-[#8A6738] text-xs font-semibold tracking-widest uppercase font-sans">
-          <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-          <span>FURNITURE CATALOGUE</span>
+        <div className="flex items-center justify-center gap-3">
+          <span className="w-8 h-px bg-[#8A6738]/60" />
+          <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+            Furniture Catalogue
+          </span>
+          <span className="w-8 h-px bg-[#8A6738]/60" />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[#1A1715] leading-tight">
           Timeless Furniture Catalog
@@ -160,12 +163,12 @@ export default function FurniturePage({
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
 
-                <div className="absolute top-4 left-4 flex flex-col gap-1">
-                  <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#EAE5DC] text-[#1A1715] text-[10px] uppercase font-bold tracking-wider font-sans">
+                <div className="absolute top-4 left-4 flex flex-col gap-1.5">
+                  <span className="px-2.5 py-1 bg-white/95 backdrop-blur-md text-[#1A1715] text-[10px] uppercase font-semibold tracking-wider font-sans border border-[#EAE5DC]/80 shadow-xs">
                     {product.category}
                   </span>
                   {product.badge && (
-                    <span className="px-2 py-0.5 rounded-full bg-[#F3EFE8] border border-[#EAE5DC] text-[#8A6738] text-[9px] font-bold uppercase font-sans">
+                    <span className="px-2 py-0.5 bg-[#8A6738] text-white text-[9px] font-medium uppercase tracking-wider font-sans shadow-xs">
                       {product.badge}
                     </span>
                   )}

@@ -50,8 +50,8 @@ export default function WhyManduva() {
               We stand apart through our dedication to authentic Indian woodwork, restored architectural relics, and heirloom permanence.
             </p>
           </div>
-          <div className="shrink-0 flex items-center gap-2 text-xs font-sans text-[#68625A] bg-white px-4 py-2 rounded-full border border-[#EAE5DC] shadow-xs">
-            <Compass className="w-3.5 h-3.5 text-[#8A6738]" />
+          <div className="shrink-0 flex items-center gap-2.5 text-xs font-sans text-[#8A6738] uppercase tracking-[0.2em] font-semibold">
+            <span className="w-6 h-px bg-[#8A6738]" />
             <span>The Benchmark of Hyderabad Antiques</span>
           </div>
         </div>

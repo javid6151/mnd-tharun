@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, ShieldCheck, ExternalLink, Sparkles, Quote, Search } from 'lucide-react';
+import { Star, ShieldCheck, ExternalLink, Quote, Search } from 'lucide-react';
 import { verifiedReviews, googleProfileSummary } from '../data/reviewsData';
 
 export default function ReviewsPage() {
@@ -17,9 +17,12 @@ export default function ReviewsPage() {
       
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3EFE8] border border-[#EAE5DC] text-[#8A6738] text-xs font-semibold tracking-widest uppercase font-sans">
-          <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-          <span>VERIFIED TESTIMONIALS</span>
+        <div className="flex items-center justify-center gap-3">
+          <span className="w-8 h-px bg-[#8A6738]/60" />
+          <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+            Verified Testimonials
+          </span>
+          <span className="w-8 h-px bg-[#8A6738]/60" />
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[#1A1715] leading-tight">
           Customer Reviews
@@ -83,7 +86,7 @@ export default function ReviewsPage() {
                     <Star key={i} className="w-4 h-4 fill-[#8A6738] text-[#8A6738]" />
                   ))}
                 </div>
-                <span className="text-[10px] px-2.5 py-1 rounded-full bg-[#F3EFE8] text-[#8A6738] font-bold border border-[#EAE5DC] font-sans">
+                <span className="text-[10px] uppercase font-semibold tracking-wider text-[#8A6738] font-sans">
                   Google Verified
                 </span>
               </div>

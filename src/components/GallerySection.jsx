@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Maximize2, X, ChevronLeft, ChevronRight, Eye, Grid } from 'lucide-react';
+import { Maximize2, X, ChevronLeft, ChevronRight, Eye, Grid } from 'lucide-react';
 import { galleryItems } from '../data/furnitureData';
 import ScrollReveal from './ScrollReveal';
 
@@ -96,7 +96,7 @@ export default function GallerySection() {
 
                 {/* Top Category Badge & Maximize Icon */}
                 <div className="absolute top-4 inset-x-4 flex items-center justify-between z-10">
-                  <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-[#EAE5DC] text-[#1A1715] text-[10px] font-semibold uppercase tracking-wider">
+                  <span className="px-2.5 py-1 bg-white/95 backdrop-blur-md border border-[#EAE5DC] text-[#1A1715] text-[10px] font-semibold uppercase tracking-wider font-sans shadow-xs">
                     {item.category}
                   </span>
 

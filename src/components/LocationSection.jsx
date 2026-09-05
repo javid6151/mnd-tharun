@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, MessageSquare, Clock, Navigation, ExternalLink, Sparkles } from 'lucide-react';
+import { MapPin, Phone, MessageSquare, Clock, Navigation, ExternalLink } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 
 export default function LocationSection({ storeConfig }) {
@@ -9,9 +9,12 @@ export default function LocationSection({ storeConfig }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F3EFE8] border border-[#EAE5DC] text-[#68625A] text-xs font-semibold tracking-widest uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-[#8A6738]" />
-            <span>HYDERABAD SHOWROOM</span>
+          <div className="flex items-center justify-center gap-3">
+            <span className="w-8 h-px bg-[#8A6738]/60" />
+            <span className="text-[11px] font-semibold tracking-[0.25em] uppercase text-[#8A6738] font-sans">
+              Hyderabad Showroom
+            </span>
+            <span className="w-8 h-px bg-[#8A6738]/60" />
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#1A1715]">
             Visit Manduva Logillu

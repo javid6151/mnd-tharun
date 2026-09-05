@@ -180,12 +180,12 @@ export default function FeaturedProducts({
                     />
 
                     {/* Badges */}
-                    <div className="absolute top-3 left-3 flex gap-1.5 z-10">
-                      <span className="px-2.5 py-1 rounded-full bg-white/95 backdrop-blur-md text-[#1A1715] border border-[#EAE5DC] text-[10px] font-bold uppercase tracking-wider">
+                    <div className="absolute top-3 left-3 flex flex-col gap-1 z-10">
+                      <span className="px-2.5 py-1 bg-white/95 backdrop-blur-md text-[#1A1715] border border-[#EAE5DC] text-[10px] font-semibold uppercase tracking-wider shadow-xs font-sans">
                         {materialText}
                       </span>
                       {product.badge && (
-                        <span className="px-2 py-0.5 rounded-full bg-[#8A6738] text-white text-[10px] font-semibold tracking-wider">
+                        <span className="px-2 py-0.5 bg-[#8A6738] text-white text-[9px] font-medium tracking-wider uppercase shadow-xs font-sans">
                           {product.badge}
                         </span>
                       )}

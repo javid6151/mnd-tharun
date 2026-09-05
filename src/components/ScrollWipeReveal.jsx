@@ -148,7 +148,7 @@ export default function ScrollWipeReveal() {
       <div className="absolute top-8 right-6 sm:top-12 sm:right-12 z-30 pointer-events-none text-right font-sans text-[10px] sm:text-xs font-semibold tracking-widest uppercase">
         <span 
           ref={progressBadgeRef}
-          className="px-3.5 py-1.5 rounded-full bg-[#1A1715]/90 text-[#C49B66] border border-white/20 shadow-md"
+          className="px-3.5 py-1.5 bg-[#1A1715]/90 backdrop-blur-md text-[#C49B66] border border-white/20 shadow-md tracking-[0.2em] font-medium"
         >
           SCROLL REVEAL // 0%
         </span>
